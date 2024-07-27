@@ -18,5 +18,19 @@ void main(){
   Student.addAll(['Scarlet','Gal','Pallavi','Trisha','Mehzabin','Hinata','Tsunade']);
   print(Student);
 
-
+  List<String> Names = [
+    'Arefin',
+    'Shuvo',
+    'Rakib',
+    'Shoaib'
+  ];
+  for (int i=0; i<Names.length; i++){
+    print('Selected Candidate is $i: ${Names[i]}');
+  }
+  for (String Name in Names){
+    print('Candidate name: $Name');
+  }
+  Names.forEach((name){
+    print('$name,You are selected!');
+  });
 }
